@@ -139,6 +139,20 @@ h1,h2,h3{font-family:'DM Sans',Arial,sans-serif}
 .heroart.poster-art:before{content:'REPZILLA';font-family:'Barlow Condensed',Impact,sans-serif;font-weight:900;letter-spacing:-2px;color:#ff2856;text-shadow:2px 3px #70051e,0 0 15px #ff285633}
 .heroart.poster-art:after{content:'THE BODY MODIFICATION PROJECT';font-size:10px;letter-spacing:2px}
 .portrait{object-position:center 40%;filter:drop-shadow(0 0 14px #ff285644)}
+
+/* Classic dripping blood / horror-punk typography */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Metal+Mania&family=Barlow+Condensed:wght@700;800;900&display=swap');
+.brand,.heroart.poster-art:before,.heroart.poster-art:after,#achievements .complete,.blood-title,.eyebrow.blood{
+  font-family:'Nosifer','Creepster',Impact,fantasy!important;
+  font-weight:400!important;
+  letter-spacing:1px!important;
+  text-shadow:0 2px 0 #87001f,0 4px 0 #49000f,0 0 12px #ff285633;
+}
+.brand{font-size:clamp(26px,7vw,39px)!important;line-height:1.25}
+.brand:after{font-family:'Metal Mania','Barlow Condensed',sans-serif!important;font-size:9px!important;letter-spacing:2px!important;text-shadow:none!important}
+.heroart.poster-art:before{font-size:clamp(29px,8.8vw,52px)!important;line-height:1.3}
+.heroart.poster-art:after{font-family:'Metal Mania','Barlow Condensed',sans-serif!important;font-size:12px!important;letter-spacing:1.8px!important;text-shadow:0 2px #49000f}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif}
 </style></head><body data-theme="classic">
 <header class="top"><div><div class="brand">REPZILLA</div><div class="tag">THE BODY MODIFICATION PROJECT</div></div><div class="topright"><button class="btn outline" id="settingsJump">⚙</button><button class="btn" id="quick">LET'S LIFT</button></div></header>
 <main class="shell"><nav class="tabs"><button class="active" data-screen="home">Home</button><button data-screen="workouts">Workouts</button><button data-screen="strength">Strength log</button><button data-screen="cardio">Cardio</button><button data-screen="progress">Progress</button><button data-screen="achievements">Achievements</button><button data-screen="settings">Settings</button></nav>

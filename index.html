@@ -154,22 +154,34 @@ header.top .brand{font-family:'Nosifer',cursive!important;font-style:normal!impo
 header.top .brand:after{font-family:'Metal Mania',fantasy!important;font-size:8px!important;letter-spacing:2px!important;line-height:1.4!important;text-shadow:none!important}
 
 /* Horror-poster lettering: use the dripping display face consistently. */
-header.top .brand,
-.heroart.poster-art:before {
-  font-family: 'Nosifer', 'Creepster', fantasy !important;
+/* Rebuild the brand around the thick, hand-drawn dripping horror-poster lettering. */
+header.top .brand {
+  font-family: 'Creepster', fantasy !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
-  text-transform: uppercase;
+  font-size: clamp(39px, 10vw, 54px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: .5px !important;
+  color: #e10b18 !important;
+  text-shadow: 2px 2px 0 #65000a, 0 0 8px #9d0010 !important;
 }
+header.top .tag { font-family: 'Barlow Condensed', Impact, sans-serif; letter-spacing: 2.2px; }
 .heroart.poster-art:before {
   content: 'REPZILLA' !important;
-  font-size: clamp(34px, 9vw, 52px) !important;
-  line-height: 1.25 !important;
-  color: #d9101b !important;
-  text-shadow: 1px 2px 0 #7d0009, 0 0 10px #a90012 !important;
+  font-family: 'Creepster', fantasy !important;
+  font-size: clamp(43px, 11vw, 62px) !important;
+  font-weight: 400 !important;
+  letter-spacing: .5px !important;
+  line-height: 1.05 !important;
+  color: #e10b18 !important;
+  text-shadow: 2px 2px 0 #65000a, 0 0 8px #9d0010 !important;
   padding: 6px 4px !important;
+  top: 8px !important;
 }
+body { background: #000 !important; }
+.card { border-radius: 4px !important; box-shadow: none !important; }
+.heroart.poster-art { border: 0 !important; background: #000 !important; }
+
 
 </style><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet"></head><body data-theme="classic">
 <header class="top"><div><div class="brand">REPZILLA</div><div class="tag">THE BODY MODIFICATION PROJECT</div></div><div class="topright"><button class="btn outline" id="settingsJump">⚙</button><button class="btn" id="quick">LET'S LIFT</button></div></header>

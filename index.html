@@ -42,6 +42,53 @@ h2{font:800 18px 'Barlow Condensed';letter-spacing:.5px}
 .badgecard{border-radius:8px;background:#100e0f}
 .theme{border-radius:5px}
 @media(min-width:701px){.top,.shell{max-width:520px}.hero{grid-template-columns:1fr}.heroart{min-height:235px}.grid{grid-template-columns:1fr}}
+
+/* Reference-led REPZILLA mobile layout */
+:root{--bg:#050405;--panel:#0b090a;--pink:#ff174f;--cream:#f6c9a4;--muted:#a99b9d;--line:#34252a}
+body{background:#050405;color:#f7eee6;font-family:'DM Sans',Arial,sans-serif}
+.top{max-width:430px;padding:13px 14px 10px;border-bottom:1px solid #30151d}
+.brand{font:900 30px 'Permanent Marker','Barlow Condensed';letter-spacing:-1px;color:#ff174f;text-shadow:2px 2px #6e001b}
+.tag{font-size:8px;letter-spacing:1.4px}
+.topright .outline{display:none}
+.topright .btn{font-size:10px;padding:10px 11px;border-radius:5px}
+.shell{max-width:430px;padding:10px 10px 26px}
+.tabs{gap:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 0 12px;padding-bottom:5px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;border:1px solid #39272d;background:#090708;border-radius:0;padding:9px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.2px}
+.tabs button.active{background:#ff174f;color:#090608;border-color:#ff174f}
+.card{background:linear-gradient(145deg,#100d0e,#080708 90%);border:1px solid #33262a;border-radius:11px;padding:13px;box-shadow:0 3px 10px #000}
+.hero{display:grid;grid-template-columns:1fr;gap:10px}
+.hero>.card:first-child{order:2}
+.heroart{order:1;min-height:250px;position:relative;overflow:hidden;justify-content:center;align-items:center;background:radial-gradient(ellipse at 50% 45%,#8f0b2c 0,#400717 42%,#0a0608 78%);border:1px solid #5b1b2c}
+.heroart:before{content:'★  ✦  ★  ✦  ★';position:absolute;top:13px;left:0;right:0;text-align:center;color:#ff174f;font-size:22px;letter-spacing:7px}
+.heroart:after{content:'THE BODY MODIFICATION PROJECT';position:absolute;left:8px;right:8px;bottom:10px;text-align:center;font:900 11px 'Barlow Condensed';letter-spacing:2px;color:#ff174f}
+.silhouette{font-size:125px;filter:drop-shadow(0 0 18px #ff174f);line-height:1;position:relative;z-index:1}
+.posterquote{display:none}
+h1{font:900 47px/.87 'Barlow Condensed';letter-spacing:-1.6px}
+.eyebrow{font:800 10px 'DM Sans';letter-spacing:2px;color:#ff3c68}
+h2{font:800 19px 'Barlow Condensed';letter-spacing:.5px}
+h3{font:700 16px 'Barlow Condensed'}
+.btn{background:#ff174f;color:#090508;border:1px solid #ff174f;border-radius:5px;font-weight:900}
+.btn.outline{background:transparent;color:var(--cream);border-color:var(--cream)}
+.bigbtn{padding:13px 10px;font-size:11px}
+.grid{grid-template-columns:1fr;gap:10px}
+.stats{gap:10px}
+.num{font:900 40px 'Barlow Condensed';color:var(--cream)}
+.stat small{font:700 9px 'DM Sans';letter-spacing:1.5px}
+.row{padding:10px 0;border-color:#2b2024}
+input,select{border-radius:5px;background:#080607;border-color:#443239;padding:10px}
+.set{border-radius:5px}
+.bar{border-radius:0;background:#3b2c31}
+.bar span{background:#ff174f}
+.chart i{border-radius:0;background:#ff174f}
+.badgegrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.badgecard{border-radius:7px;background:#0d0a0b;border-color:#38272c;padding:12px 5px}
+.badgecard .icon{color:var(--cream);font-size:25px}
+.themegrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.theme{border-radius:5px}
+.complete{font:900 31px/.9 'Permanent Marker'}
+.quote{font:italic 13px Georgia;color:#ff6384}
+@media(min-width:700px){.top,.shell{max-width:430px}.hero,.grid{grid-template-columns:1fr}.heroart{min-height:250px}}
 </style></head><body data-theme="classic">
 <header class="top"><div><div class="brand">REPZILLA</div><div class="tag">THE BODY MODIFICATION PROJECT</div></div><div class="topright"><button class="btn outline" id="settingsJump">⚙</button><button class="btn" id="quick">LET'S LIFT</button></div></header>
 <main class="shell"><nav class="tabs"><button class="active" data-screen="home">Home</button><button data-screen="workouts">Workouts</button><button data-screen="strength">Strength log</button><button data-screen="cardio">Cardio</button><button data-screen="progress">Progress</button><button data-screen="achievements">Achievements</button><button data-screen="settings">Settings</button></nav>

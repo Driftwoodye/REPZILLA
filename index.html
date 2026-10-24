@@ -140,20 +140,15 @@ h1,h2,h3{font-family:'DM Sans',Arial,sans-serif}
 .heroart.poster-art:after{content:'THE BODY MODIFICATION PROJECT';font-size:10px;letter-spacing:2px}
 .portrait{object-position:center 40%;filter:drop-shadow(0 0 14px #ff285644)}
 
-/* Classic dripping blood / horror-punk typography */
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Metal+Mania&family=Barlow+Condensed:wght@700;800;900&display=swap');
-.brand,.heroart.poster-art:before,.heroart.poster-art:after,#achievements .complete,.blood-title,.eyebrow.blood{
-  font-family:'Nosifer','Creepster',Impact,fantasy!important;
-  font-weight:400!important;
-  letter-spacing:1px!important;
-  text-shadow:0 2px 0 #87001f,0 4px 0 #49000f,0 0 12px #ff285633;
-}
-.brand{font-size:clamp(26px,7vw,39px)!important;line-height:1.25}
+
+/* restrained title treatment: keep the dripping font on the logo only */
+.brand{font-family:'Creepster',Impact,fantasy!important;font-size:36px!important;letter-spacing:1px!important;line-height:1.15!important;color:#ff2856!important;text-shadow:2px 2px 0 #76051d!important}
 .brand:after{font-family:'Metal Mania','Barlow Condensed',sans-serif!important;font-size:9px!important;letter-spacing:2px!important;text-shadow:none!important}
-.heroart.poster-art:before{font-size:clamp(29px,8.8vw,52px)!important;line-height:1.3}
-.heroart.poster-art:after{font-family:'Metal Mania','Barlow Condensed',sans-serif!important;font-size:12px!important;letter-spacing:1.8px!important;text-shadow:0 2px #49000f}
-h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif}
-</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Metal+Mania&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet"></head><body data-theme="classic">
+.heroart.poster-art:before{font-family:'Creepster',Impact,fantasy!important;font-size:clamp(35px,9vw,58px)!important;letter-spacing:1px!important;line-height:1.1!important;text-shadow:2px 2px 0 #76051d!important}
+.heroart.poster-art:after{font-family:'Metal Mania','Barlow Condensed',sans-serif!important;font-size:11px!important;letter-spacing:1.5px!important;text-shadow:none!important}
+#achievements .complete{font-family:'Creepster',Impact,fantasy!important;letter-spacing:1px!important;text-shadow:2px 2px #76051d!important}
+h1,h2,h3,.btn,.eyebrow,.stat small{font-family:'Barlow Condensed',Impact,sans-serif!important}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Creepster&family=Metal+Mania&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet"></head><body data-theme="classic">
 <header class="top"><div><div class="brand">REPZILLA</div><div class="tag">THE BODY MODIFICATION PROJECT</div></div><div class="topright"><button class="btn outline" id="settingsJump">⚙</button><button class="btn" id="quick">LET'S LIFT</button></div></header>
 <main class="shell"><nav class="tabs"><button class="active" data-screen="home">Home</button><button data-screen="workouts">Workouts</button><button data-screen="strength">Strength log</button><button data-screen="cardio">Cardio</button><button data-screen="progress">Progress</button><button data-screen="achievements">Achievements</button><button data-screen="settings">Settings</button></nav>
 <section class="screen active" id="home"><div class="hero"><div class="card"><div class="eyebrow">GOOD MORNING, CREATURE OF THE NIGHT.</div><h1>LET'S MAKE<br><em>A SCENE.</em></h1><p class="muted">Same excuses again? Let's lift.</p><div class="stats"><div class="stat"><div class="num" id="totalWorkouts">0</div><small>WORKOUTS</small></div><div class="stat"><div class="num" id="totalSets">0</div><small>SETS COMPLETED</small></div></div><button class="btn bigbtn" data-jump="workouts">LET'S DO THE TIME WARP</button></div><div class="card heroart poster-art"><svg class="portrait" viewBox="0 0 360 430" role="img" aria-label="Rocky Horror inspired glam-rock host, dramatic makeup, corset and theatrical pose">

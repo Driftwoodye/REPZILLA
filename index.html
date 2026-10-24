@@ -155,57 +155,33 @@ header.top .brand:after{font-family:'Metal Mania',fantasy!important;font-size:8p
 
 /* Horror-poster lettering: use the dripping display face consistently. */
 
-/* REPZILLA — reference-led black/red poster redesign */
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Barlow+Condensed:wght@500;600;700;800;900&display=swap');
-:root{--bg:#000;--panel:#090909;--pink:#ff171f;--cream:#fff0d8;--muted:#aaa;--line:#343434;--red:#e10b18}
-html,body{background:#000!important;color:#f5f2ee}
-.top{max-width:520px;padding:18px 18px 8px;border:0;align-items:center}
-.brand{font-family:'Creepster',fantasy!important;font-size:clamp(58px,14vw,82px)!important;line-height:.9!important;letter-spacing:0!important;font-style:normal!important;color:#f20d18!important;text-shadow:0 2px #870009,0 0 8px #8b0000!important}
-.tag{font:700 9px 'Barlow Condensed',sans-serif!important;letter-spacing:2px!important;color:#eee!important}
-.topright .outline{display:none}.topright .btn{border-radius:3px;background:#e20c16;color:#fff;padding:10px 12px}
-.shell{max-width:520px;padding:8px 14px 28px}
-.tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:0;margin:8px 0 14px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
-.tabs button{flex:0 0 auto;background:#000;border:1px solid #e20c16;border-radius:0;color:#f22;padding:9px 11px;font:700 11px 'Barlow Condensed';text-transform:uppercase}
-.tabs button.active{background:#e20c16;color:#fff}
-.card{background:#080808!important;border:1px solid #383838!important;border-radius:13px!important;box-shadow:none!important;padding:15px}
-.hero{display:flex;flex-direction:column;gap:12px}
-.hero>.card:first-child{order:2}
-.heroart{order:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:0;padding:0!important;overflow:visible;border:0!important;background:#000!important}
-.heroart:before{content:'REPZILLA'!important;position:relative;inset:auto!important;display:block;font:400 clamp(56px,14vw,76px)/1 'Creepster',fantasy!important;letter-spacing:0!important;color:#f20d18!important;text-shadow:0 2px #870009!important;transform:none!important;text-align:center;width:100%;padding:8px 0 0}
-.heroart:after{content:none!important}
-.heroart .portrait{display:none!important}
-.heroart:after{display:none}
-.heroart .posterquote{display:block!important;font:italic 700 22px Georgia,serif!important;color:#fff0d8!important;text-align:center;max-width:340px;margin:0 auto;padding:12px 10px 4px;order:3}
-.heroart:has(.portrait):after{content:none!important}
-.heroart:has(.portrait){position:relative}
-.heroart:has(.portrait) .posterquote{display:block}
-.heroart:has(.portrait) .portrait{display:none}
-.heroart:has(.portrait)::marker{content:none}
-.heroart:has(.portrait){background:#000!important}
-.eyebrow{font:700 12px 'Barlow Condensed';letter-spacing:2px;color:#f22}
-h1{font:400 clamp(43px,11vw,62px)/.9 'Creepster',fantasy!important;letter-spacing:0!important;color:#f22!important;text-align:center;margin:8px 0 12px}
-h1 em{color:#f22}
-.muted{color:#aaa}
-.stats{gap:12px}.stat{border-top:1px solid #333}.num{font:700 36px 'Barlow Condensed';color:#f22}
-.btn{background:#ed101b;color:#fff;border:1px solid #ff3038;border-radius:5px;font:700 15px 'Barlow Condensed';letter-spacing:1px}
-.bigbtn{padding:17px 12px;font-size:22px;margin-top:14px}
-.outline{background:#000;color:#f22;border-color:#f22}
-h2,h3,.sectionhead h2{font-family:'Creepster',fantasy!important;color:#f22!important;font-weight:400}
-input,select{background:#111!important;border:1px solid #383838!important;border-radius:6px!important;color:#fff!important}
-.set{background:#111;border-color:#333;border-radius:6px}
-.set button{background:#f22;color:#fff;border:0;border-radius:50%}
-.row{border-color:#292929}.quote{color:#fff0d8}
-.chart i{background:#f22}
-.badgecard{background:#090909;border-color:#333;border-radius:7px}
-.theme{border-radius:4px}
-.footer{color:#666}
-@media(max-width:700px){
- .top{padding:14px 14px 6px}.brand{font-size:62px!important}.topright .btn{font-size:12px}
- .shell{padding:4px 12px 26px}.hero,.grid{grid-template-columns:1fr}
- .heroart{min-height:0}.card{padding:14px}.sets{grid-template-columns:repeat(2,minmax(0,1fr))}
- .tabs button{padding:9px 10px;font-size:11px}
+/* Rebuild the brand around the thick, hand-drawn dripping horror-poster lettering. */
+header.top .brand {
+  font-family: 'Creepster', fantasy !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: clamp(39px, 10vw, 54px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: .5px !important;
+  color: #e10b18 !important;
+  text-shadow: 2px 2px 0 #65000a, 0 0 8px #9d0010 !important;
 }
-
+header.top .tag { font-family: 'Barlow Condensed', Impact, sans-serif; letter-spacing: 2.2px; }
+.heroart.poster-art:before {
+  content: 'REPZILLA' !important;
+  font-family: 'Creepster', fantasy !important;
+  font-size: clamp(43px, 11vw, 62px) !important;
+  font-weight: 400 !important;
+  letter-spacing: .5px !important;
+  line-height: 1.05 !important;
+  color: #e10b18 !important;
+  text-shadow: 2px 2px 0 #65000a, 0 0 8px #9d0010 !important;
+  padding: 6px 4px !important;
+  top: 8px !important;
+}
+body { background: #000 !important; }
+.card { border-radius: 4px !important; box-shadow: none !important; }
+.heroart.poster-art { border: 0 !important; background: #000 !important; }
 </style><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet"></head><body data-theme="classic">
 <header class="top"><div><div class="brand">REPZILLA</div><div class="tag">THE BODY MODIFICATION PROJECT</div></div><div class="topright"><button class="btn outline" id="settingsJump">⚙</button><button class="btn" id="quick">LET'S LIFT</button></div></header>
 <main class="shell"><nav class="tabs"><button class="active" data-screen="home">Home</button><button data-screen="workouts">Workouts</button><button data-screen="strength">Strength log</button><button data-screen="cardio">Cardio</button><button data-screen="progress">Progress</button><button data-screen="achievements">Achievements</button><button data-screen="settings">Settings</button></nav>
